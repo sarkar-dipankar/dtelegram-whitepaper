@@ -1,0 +1,35 @@
+graph TD
+    subgraph Dtelegram Network
+    L2[Layer 2 Scaling - Arbitrum]
+    Nodes[Decentralized Node Operators]
+    SDK[SDK/API for Developers]
+    end
+
+    subgraph Developers and Businesses
+    Dev[Developers]
+    Biz[Businesses]
+    end
+
+    subgraph Layer 2 Scaling
+    L2 -->|Transaction Processing| Scalability[Enhanced Scalability]
+    L2 -->|Reduced Costs| Efficiency[Improved Efficiency]
+    end
+
+    subgraph Node Operators
+    Nodes -->|Maintain Network| NetworkMaintenance[Network Maintenance]
+    Nodes -->|LiveKit Integration| TransactionValidation[LiveKit Integration]
+    Nodes -->|Contribute to Decentralization| Decentralization[Enhanced Decentralization]
+    end
+
+    Dev -->|Use SDK/API| SDK
+    Biz -->|Integrate Communication Solutions| SDK
+    SDK -->|Interact with Network| L2
+    SDK -->|RTC Capabilities| Nodes
+    SDK -->|Engage with Decentralized Network| Nodes
+
+    %% Connecting different components
+    Scalability -.->|Enhances| RTC_Services
+    Efficiency -.->|Enhances| RTC_Services
+    NetworkMaintenance -.->|Supports| RTC_Services
+    TransactionValidation -.->|Secures| RTC_Services
+    Decentralization -.->|Empowers| RTC_Services

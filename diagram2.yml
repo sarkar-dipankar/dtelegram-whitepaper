@@ -1,0 +1,30 @@
+graph TD
+    A[Token Utility and Distribution] --> B[Token Utility]
+    A --> C[Token Distribution]
+    B --> D[Staking for Node Operation]
+    B --> E[Transaction Fees]
+    B --> F[Governance Participation]
+    B --> G[Rewards and Incentives]
+    
+    C --> H[Network Incentives]
+    C --> I[Development Fund]
+    C --> J[Community and Ecosystem]
+    C --> K[Private and Public Sales]
+
+    L[Node Performance and Risk Management] --> M[Node Performance Check]
+    L --> N[Risk Mitigation]
+    M --> O[Regular Node Audits]
+    M --> P[Performance Metrics Monitoring]
+    N --> Q[Staking Penalties]
+    N --> R[Adaptive Staking Requirements]
+    N --> S[Node Isolation for Security Breaches]
+
+    classDef utility fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef distribution fill:#ccf,stroke:#333,stroke-width:2px;
+    classDef performance fill:#cfc,stroke:#333,stroke-width:2px;
+    classDef risk fill:#fcf,stroke:#333,stroke-width:2px;
+
+    class A utility;
+    class L performance;
+    class C,B distribution;
+    class M,N risk;

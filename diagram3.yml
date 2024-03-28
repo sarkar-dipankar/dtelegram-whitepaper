@@ -1,0 +1,31 @@
+sequenceDiagram
+    participant A as Node Operator
+    participant B as Dtelegram Network
+    participant C as Quality Measurement System
+    participant D as Token Distribution Mechanism
+
+    A->>B: Register Node
+    B->>A: Provide Node Operation Guidelines
+    A->>B: Start Node Operation
+    loop Daily Operation Check
+        B->>A: Request Performance Data
+        A->>B: Submit Performance Data
+    end
+    B->>C: Assess Node Performance
+    C->>B: Performance Report
+    alt High Performance
+        B->>D: Trigger Token Reward
+        D->>A: Distribute Token Reward
+    else Average Performance
+        B->>A: Provide Performance Improvement Suggestions
+    else Low Performance
+        B->>D: Apply Staking Penalty
+        D->>A: Deduct Tokens
+    end
+    alt Quality Assurance Failure
+        B->>A: Notify of Quality Breach
+        A->>B: Address and Resolve Issue
+        B->>A: Reinstate Node Post-Resolution
+    else Security Breach or Continuous Low Performance
+        B->>A: Node Isolation and Deactivation
+    end

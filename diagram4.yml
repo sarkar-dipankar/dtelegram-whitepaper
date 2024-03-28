@@ -1,0 +1,31 @@
+sequenceDiagram
+    participant A as Node Operator
+    participant B as Dtelegram Network
+    participant C as Automated Security System
+    participant D as Network Admin
+    participant E as Token Distribution Mechanism
+
+    Note over B,C: Security Breach Detection
+    B->>C: Monitor for Anomalies
+    C-->>B: Report Potential Breach
+    alt Automated Detection
+        C->>B: Initiate Automated Response
+        B->>A: Disable Node (Temporary)
+        A->>B: Resolve Security Issue
+        B->>C: Re-evaluate Node Status
+        C-->>B: Security Status Update
+        B->>A: Reactivate Node after Issue Resolution
+    else Manual Intervention Required
+        B->>D: Escalate Issue for Manual Review
+        D->>A: Notify Node Operator of Breach
+        A->>D: Submit Breach Resolution Report
+        D->>B: Review and Approve Resolution
+        B->>A: Reinstate Node upon Approval
+    end
+    alt Breach Resolved
+        B->>E: Resume Normal Token Flow
+    else Breach Unresolved or Recurrent
+        B->>E: Apply Staking Penalty
+        E->>A: Deduct Tokens
+        B->>A: Permanent Node Deactivation
+    end
