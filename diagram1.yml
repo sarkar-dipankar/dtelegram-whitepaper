@@ -1,5 +1,5 @@
 graph TD
-    subgraph Dtelegram Network
+    subgraph dTelecom Network
     L2[Layer 2 Scaling - Arbitrum]
     Nodes[Decentralized Node Operators]
     SDK[SDK/API for Developers]

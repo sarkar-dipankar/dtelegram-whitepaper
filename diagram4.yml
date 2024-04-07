@@ -1,9 +1,9 @@
 sequenceDiagram
     participant A as Node Operator
-    participant B as Dtelegram Network
+    participant B as dTelecom Network
     participant C as Automated Security System
-    participant D as Network Admin
     participant E as Token Distribution Mechanism
+    participant F as Community Governance
 
     Note over B,C: Security Breach Detection
     B->>C: Monitor for Anomalies
@@ -15,12 +15,18 @@ sequenceDiagram
         B->>C: Re-evaluate Node Status
         C-->>B: Security Status Update
         B->>A: Reactivate Node after Issue Resolution
-    else Manual Intervention Required
-        B->>D: Escalate Issue for Manual Review
-        D->>A: Notify Node Operator of Breach
-        A->>D: Submit Breach Resolution Report
-        D->>B: Review and Approve Resolution
-        B->>A: Reinstate Node upon Approval
+    else Community Review Required
+        B->>F: Trigger Community Review
+        F->>A: Community Notified of Breach
+        A->>F: Submit Breach Resolution to Community
+        F->>B: Community Votes on Resolution
+        alt Resolution Approved
+            B->>A: Reinstate Node upon Community Approval
+        else Resolution Denied
+            B->>E: Apply Staking Penalty
+            E->>A: Deduct Tokens
+            B->>A: Node Deactivation
+        end
     end
     alt Breach Resolved
         B->>E: Resume Normal Token Flow

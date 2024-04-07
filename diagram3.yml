@@ -1,6 +1,6 @@
 sequenceDiagram
     participant A as Node Operator
-    participant B as Dtelegram Network
+    participant B as dTelecom Network
     participant C as Quality Measurement System
     participant D as Token Distribution Mechanism
 

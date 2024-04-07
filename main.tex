@@ -9,19 +9,24 @@
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
+\usepackage{tablefootnote}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Empowering Connections: Dtelegram's Revolutionary DePIN for Next-Generation Real-Time Communication}
+\title{Empowering Connections: dTelecom's Revolutionary DePIN for Next-Generation Real-Time Communication}
 
-\author{\href{https://orcid.org/0000-0001-5431-6367}{\hspace{1mm}Dipankar Sarkar} \\
+\author{\href{https://www.dipankar.name}{\hspace{1mm}Dipankar Sarkar} \\
   \texttt{dipankar@cryptuon.com} \\
         \and
-	Vadim Filimonov \\
+	\href{https://www.linkedin.com/in/vadim-filimonov-56542823a/}{\hspace{1mm}Vadim Filimonov} \\
 	%% Address \\
-	\texttt{vadim@dtelegram.org} \\
-	%% \And
+	\texttt{vadim@dTelecom.org} \\
+	\and
+	\href{https://www.linkedin.com/in/petrmalyukov/}{\hspace{1mm}Petr Malyukov} \\
+	%% Address \\
+	\texttt{petr@dTelecom.org} \\
+        %% \And
 	%% Coauthor \\
 	%% Affiliation \\
 	%% Address \\
@@ -37,133 +42,157 @@
 \maketitle
 
 \begin{abstract}
-In an era where digital interconnectivity is paramount, Dtelegram emerges as a pioneering force in the realm of real-time communication (RTC), introducing a Decentralized Physical Infrastructure Network (DePIN) that reshapes the landscape of digital exchanges. This whitepaper elucidates Dtelegram's groundbreaking approach, using blockchain decentralization to enhance the security, privacy, and efficiency of RTC. Dtelegram's DePIN architecture transcends the constraints of traditional centralized systems, offering a robust, scalable, and cost-effective communication solution. Through its comprehensive SDK/API suite, Dtelegram enables businesses to seamlessly integrate advanced RTC features, ensuring data sovereignty and operational cost reductions. The platform's strategic tokenomics and participatory network model are crafted to cultivate a sustainable and vibrant ecosystem, inviting active involvement from users and stakeholders. Designed for business clients seeking reliable and scalable RTC solutions and investors looking to enter the frontier of decentralized technology, Dtelegram represents a new era in communication: secure, user-centric, and driven by the principles of decentralization and community empowerment.
+In an era where digital interconnectivity is paramount, dTelecom emerges as a pioneering force in the realm of real-time communication (RTC), introducing a Decentralized Physical Infrastructure Network (DePIN) that reshapes the landscape of digital exchanges. This whitepaper elucidates dTelecom's groundbreaking approach, using blockchain decentralization to enhance the security, privacy, and efficiency of RTC. dTelecom's DePIN architecture transcends the constraints of traditional centralized systems, offering a robust, scalable, and cost-effective communication solution. Through its comprehensive SDK/API suite, dTelecom enables businesses to seamlessly integrate advanced RTC features, ensuring data sovereignty and operational cost reductions. The platform's strategic tokenomics and participatory network model are crafted to cultivate a sustainable and vibrant ecosystem, inviting active involvement from users and stakeholders. Designed for business clients seeking reliable and scalable RTC solutions and investors looking to enter the frontier of decentralized technology, dTelecom represents a new era in communication: secure, user-centric, and driven by the principles of decentralization and community empowerment.
 \end{abstract}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
 
 \section{Introduction}
 
-As we enter the digital age, the proliferation of real-time communication technologies has become ubiquitous, reshaping how we connect, collaborate, and comprehend our world. The Dtelegram network emerges as a vanguard in this digital evolution, introducing a decentralized infrastructure paradigm that promises to redefine the internet's real-time communication landscape.
+As we enter the digital age, the proliferation of real-time communication technologies has become ubiquitous, reshaping how we connect, collaborate, and comprehend our world. The dTelecom network emerges as a vanguard in this digital evolution, introducing a decentralized infrastructure paradigm that promises to redefine the internet's real-time communication landscape.
 
 Global video traffic on the Internet currently dominates online content, accounting for approximately 80\% of all data transmitted across the Web, projections indicating a steady ascent \cite{Cisco2021}. This burgeoning demand underscores a critical juncture in communication technology, where traditional centralized solutions no longer suffice due to their inherent limitations in scalability, security, and customization.
 
 Centralized real-time communication platforms, while prevalent, impose significant constraints on data privacy, operational costs, and geographic latency. These platforms operate within a confined architecture, leading to potential bottlenecks and vulnerabilities, particularly as the volume of data and the number of users continue to surge . Moreover, the centralized model often fails to provide the customization and flexibility demanded by various sectors such as gaming, education, and social networks, which are increasingly dependent on real-time interactions.
 
-In stark contrast, Dtelegram introduces a decentralized model that not only addresses these issues, but also champions a new ethos in digital communication. By leveraging blockchain technology, Dtelegram facilitates a network of independent node operators, ensuring data integrity, reducing latency, and democratizing access to communication infrastructure. This model is inherently more resilient, as it distributes data across multiple nodes, thus enhancing security and reliability while minimizing central points of failure \cite{Nakamoto2008}.
+In stark contrast, dTelecom introduces a decentralized model that not only addresses these issues, but also champions a new ethos in digital communication. By leveraging blockchain technology, dTelecom facilitates a network of independent node operators, ensuring data integrity, reducing latency, and democratizing access to communication infrastructure. This model is inherently more resilient, as it distributes data across multiple nodes, thus enhancing security and reliability while minimizing central points of failure \cite{Nakamoto2008}.
 
-The transition of Dtelegram from the Near protocol to the Arbitrum testnet, and the potential integration with IOTEX, exemplifies our commitment to leverage advanced blockchain solutions to optimize network performance and user experience. This strategic evolution is indicative of our dedication to not only keeping up with technological advancements but also anticipating and shaping the future of decentralized communication.
+The transition of dTelecom from the Near protocol to the Arbitrum testnet, and the potential integration with peaq \cite{Peaq}, exemplifies our commitment to leverage advanced blockchain solutions to optimize network performance and user experience. This strategic evolution is indicative of our dedication to not only keeping up with technological advancements but also anticipating and shaping the future of decentralized communication.
 
-Furthermore, Dtelegram's SDK/API offering is a testament to our innovative approach, providing developers with the tools to create or integrate versatile, real-time communication solutions. This facilitates a broad spectrum of applications, from virtual classrooms to live-streamed events, ensuring that Dtelegram's infrastructure can serve as the backbone for the next generation of digital interaction.
+Furthermore, dTelecom's SDK/API offering is a testament to our innovative approach, providing developers with the tools to create or integrate versatile, real-time communication solutions. This facilitates a broad spectrum of applications, from virtual classrooms to live-streamed events, ensuring that dTelecom's infrastructure can serve as the backbone for the next generation of digital interaction.
 
-As we chart the course towards a more connected and decentralized digital future, Dtelegram stands at the forefront, pioneering a network that promises to transform the very fabric of internet-based communication. Through our commitment to innovation, security, and community empowerment, Dtelegram is not just creating a platform; we are cultivating a new digital commons, where every participant is a stakeholder in a more open, efficient, and equitable communication ecosystem.
+As we chart the course towards a more connected and decentralized digital future, dTelecom stands at the forefront, pioneering a network that promises to transform the very fabric of internet-based communication. Through our commitment to innovation, security, and community empowerment, dTelecom is not just creating a platform; we are cultivating a new digital commons, where every participant is a stakeholder in a more open, efficient, and equitable communication ecosystem.
 
+
+\pagebreak
 
 \section{Market Analysis}
 
-The landscape of real-time communication (RTC) technologies is experiencing unprecedented growth, driven by the escalating demand for digital interaction across various sectors. As we navigate through this dynamic market, understanding the current trends, competitive landscape, and emerging opportunities becomes imperative for positioning Dtelegram as a revolutionary player in this domain.
+The landscape of real-time communication (RTC) technologies is experiencing unprecedented growth, driven by the escalating demand for digital interaction across various sectors. As we navigate through this dynamic market, understanding the current trends, competitive landscape, and emerging opportunities becomes imperative for positioning dTelecom as a revolutionary player in this domain.
 
-This analysis will underscore Dtelegram's potential to redefine the RTC domain, offering a decentralized, secure, and scalable infrastructure that aligns with future digital communication needs and trends. As we progress, our focus will remain on capturing emerging opportunities, addressing unmet needs, and continually evolving to meet the dynamic demands of the digital era.
+This analysis will underscore dTelecom's potential to redefine the RTC domain, offering a decentralized, secure, and scalable infrastructure that aligns with future digital communication needs and trends. As we progress, our focus will remain on capturing emerging opportunities, addressing unmet needs, and continually evolving to meet the dynamic demands of the digital era.
 
 
 \paragraph{Current Market Trends} The global RTC market is poised for robust growth, with forecasts projecting significant expansion due to the increasing adoption of IoT devices, rising demand for real-time communication in various industries, and the burgeoning popularity of remote work and virtual events. A report by Market Research Future \cite{MarketResearchFuture2021} anticipates the global RTC market to grow substantially, underscoring the vital role of RTC solutions in contemporary digital ecosystems.
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+\begin{tabular}{|l|p{3cm}|p{3cm}|p{3cm}|}
 \hline
-\textbf{Feature/Service} & \textbf{Dtelegram} & \textbf{Twilio} & \textbf{LiveKit} \\
+\textbf{Feature/Service} & \textbf{dTelecom} & \textbf{Agora} & \textbf{LiveKit Cloud} \\
 \hline
-Maximum Participants per Conference & 2000 (across 20 servers) & Limited by pricing tier & Dependent on plan \\
+Price & from \$0.00018/min from \$0.0048/GB & \$0.00399/min & \$0.18/GB \\
 \hline
-Bandwidth per Participant & Up to 5 Mbps & - & - \\
+Subscription Model & Fixed monthly rate & Pay-as-you-go & Pay-as-you-go \\
 \hline
-Cost for 200 Participants & \$1540 (up to 200 users tier) & Calculated per minute & \$0.18/GB \\
+Free Tier Availability & 50 Mbps bandwidth per month ($\infty$ min/$\infty$ GB) & 10,000/min per month & 50/GB per month \\
 \hline
-Free Tier Availability & Up to 10 participants & Limited free tier & Limited free tier \\
+Scalability & Designed for scalability with cost-efficiency & Scalable, but costs increase & Scalable, but costs increase \\
 \hline
-Subscription Model & Fixed monthly rate with tiers & Pay-as-you-go & Pay-as-you-go (based on usage) \\
+Management & DePIN & Centralized & Centralized \\
 \hline
-Custom Plan & Available (over 500 participants at \$7/user) & Custom pricing available & Custom pricing available \\
+Code Type & Open source & Closed source & Open source \\
 \hline
-Scalability & Designed for scalability with cost-efficiency & Scalable but costs increase & Scalable but cost varies \\
+Node Launch\tablefootnote{Clients can run their nodes in the network, enhancing security and scalability and earning rewards for the operation of their nodes.} & Yes & No & No \\
 \hline
-Data Transmission Efficiency & Optimized through DePIN & Standard central server approach & Standard central server approach \\
+Integration Cost Coverage\tablefootnote{Covering the costs of integration by providing developers for rapid integration of the solution into the client's product.} & Yes & No & No \\
 \hline
-Total Monthly Hosting Maximum Bill & \$11,120 for extensive usage & Varies with usage & \$3,600 for specified usage \\
+Payment Method & Crypto/Fiat & Fiat & Fiat \\
 \hline
 \end{tabular}
-\caption{Comparison of Dtelegram, Twilio, and LiveKit Features and Services}
-\label{tab:comparison}
+\caption{Comparison of Features and Services between dTelecom, Agora, and LiveKit Cloud}
+\label{tab:features_comparison}
 \end{table}
-
-
 
 \paragraph{Analysis of Competitors} In the realm of web2 solutions, LiveKit.io \cite{LiveKit} offers a cloud-based platform that facilitates real-time audio and video communication but is constrained by its centralized architecture. This limitation becomes pronounced when considering data sovereignty, customization capabilities, and scalability under varying network conditions.
 
-Contrastingly, in the web3 space, Huddle01 \cite{Huddle01} emerges as a decentralized alternative, albeit nascent and limited in its current deployment and application scope. Dtelegram distinguishes itself by offering a more mature and expansive infrastructure, capable of serving a wider array of industries with higher reliability and customization flexibility.
+Contrastingly, in the web3 space, Huddle01 \cite{Huddle01} emerges as a decentralized alternative, albeit nascent and limited in its current deployment and application scope. dTelecom distinguishes itself by offering a more mature and expansive infrastructure, capable of serving a wider array of industries with higher reliability and customization flexibility.
 
-\paragraph{Target Market Segments} Dtelegram's infrastructure is uniquely poised to serve high-growth sectors such as GameFi, metaverse applications, social apps, and edtech. These sectors are inherently dynamic and require robust, scalable, and secure communication backbones. For instance, the GameFi and metaverse sectors, which are at the intersection of gaming and finance on blockchain platforms, demand low-latency and highly reliable communication channels to enhance user experience and engagement.
+\paragraph{Target Market Segments} dTelecom's infrastructure is uniquely poised to serve high-growth sectors such as GameFi, metaverse applications, social apps, and edtech. These sectors are inherently dynamic and require robust, scalable, and secure communication backbones. For instance, the GameFi and metaverse sectors, which are at the intersection of gaming and finance on blockchain platforms, demand low-latency and highly reliable communication channels to enhance user experience and engagement.
 
-Similarly, edtech's shift towards more interactive and accessible learning experiences necessitates reliable RTC solutions. Dtelegram's decentralized infrastructure offers an optimal solution, ensuring data privacy, reducing latency through localized nodes, and providing scalable solutions adaptable to varying demands.
+Similarly, edtech's shift towards more interactive and accessible learning experiences necessitates reliable RTC solutions. dTelecom's decentralized infrastructure offers an optimal solution, ensuring data privacy, reducing latency through localized nodes, and providing scalable solutions adaptable to varying demands.
 
-\paragraph{Strategic Positioning} By harnessing the power of decentralization, Dtelegram not only addresses the inherent limitations of current RTC solutions but also introduces a paradigm shift in how communication infrastructure is conceptualized and deployed. Our approach resonates with the growing emphasis on data privacy, security, and user empowerment in the digital age, positioning Dtelegram as a forward-thinking solution in the evolving RTC market landscape.
+\paragraph{Strategic Positioning} By harnessing the power of decentralization, dTelecom not only addresses the inherent limitations of current RTC solutions but also introduces a paradigm shift in how communication infrastructure is conceptualized and deployed. Our approach resonates with the growing emphasis on data privacy, security, and user empowerment in the digital age, positioning dTelecom as a forward-thinking solution in the evolving RTC market landscape.
 
+\pagebreak
 
 \section{Technical Overview}
 
-Dtelegram is at the forefront of decentralized real-time communication, leveraging cutting-edge technologies and innovative architectural design to provide a robust, secure, and scalable infrastructure. This technical overview delves into the core components and methodologies that underpin the Dtelegram network, illustrating how it transcends conventional communication frameworks to offer a revolutionary solution.
+dTelecom is at the forefront of decentralized real-time communication, leveraging cutting-edge technologies and innovative architectural design to provide a robust, secure, and scalable infrastructure. This technical overview delves into the core components and methodologies that underpin the dTelecom network, illustrating how it transcends conventional communication frameworks to offer a revolutionary solution.
 
-The technical framework discussed is a confluence of decentralized infrastructure, blockchain integration, advanced SDK/API tools, and strategic partnerships, all orchestrated to deliver a next-generation real-time communication platform. Through continuous innovation and a steadfast commitment to leveraging blockchain's potential, Dtelegram is poised to redefine the paradigms of digital communication.
+The technical framework discussed is a confluence of decentralized infrastructure, blockchain integration, advanced SDK/API tools, and strategic partnerships, all orchestrated to deliver a next-generation real-time communication platform. Through continuous innovation and a steadfast commitment to leveraging blockchain's potential, dTelecom is poised to redefine the paradigms of digital communication.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \includegraphics[width=1\linewidth]{dtelegram-01.png}
+    \includegraphics[width=1\linewidth]{dtelecom-011.png}
     \caption{Technical architecture}
     \label{fig:technical-architecture}
 \end{figure}
 
-\paragraph{Decentralized Infrastructure} At the heart of Dtelegram's innovation is its decentralized infrastructure, a paradigm shift from traditional centralized networks. Unlike centralized models, where data traverse specific fixed points, Dtelegram employs a distributed network of nodes, each operated by independent stakeholders. This architecture not only improves resilience and data privacy, but also optimizes latency by routing communications through geographically proximal nodes, thus significantly improving the quality of real-time interactions \cite{Bonneau2015}.
+\paragraph{Decentralized Infrastructure} At the heart of dTelecom's innovation is its decentralized infrastructure, a paradigm shift from traditional centralized networks. Unlike centralized models, where data traverse specific fixed points, dTelecom employs a distributed network of nodes, each operated by independent stakeholders. This architecture not only improves resilience and data privacy, but also optimizes latency by routing communications through geographically proximal nodes, thus significantly improving the quality of real-time interactions \cite{Bonneau2015}.
 
-Blockchain technology is integral to Dtelegram's infrastructure, providing a transparent, immutable, and secure framework for operational governance, tokenomics, and network participation. By anchoring the network on a blockchain, Dtelegram ensures that all transactions and operational dynamics are governed by transparent and immutable smart contracts, thus fostering trust and accountability throughout the network \cite{Narayanan2016}.
+Blockchain technology is integral to dTelecom's infrastructure, providing a transparent, immutable, and secure framework for operational governance, tokenomics, and network participation. By anchoring the network on a blockchain, dTelecom ensures that all transactions and operational dynamics are governed by transparent and immutable smart contracts, thus fostering trust and accountability throughout the network \cite{Narayanan2016}.
 
-In its commitment to leveraging state-of-the-art blockchain solutions, Dtelegram has transitioned from the Near protocol to the Arbitrum testnet. This move is strategic and aligns with the network's objectives of achieving higher throughput, enhanced security, and lower latency. Arbitrum's Layer 2 scaling solutions augment Dtelegram's performance, enabling efficient transaction processing and reduced operational costs, thus providing a more robust infrastructure for real-time communication \cite{Kalodner2018}.
+In its commitment to leveraging state-of-the-art blockchain solutions, dTelecom has transitioned from the Near protocol to the Arbitrum testnet. This move is strategic and aligns with the network's objectives of achieving higher throughput, enhanced security, and lower latency. Arbitrum's Layer 2 scaling solutions augment dTelecom's performance, enabling efficient transaction processing and reduced operational costs, thus providing a more robust infrastructure for real-time communication \cite{Kalodner2018}.
 
-Exploring further horizons, Dtelegram is considering integration with IOTEX, a move that could pioneer new frontiers in IoT and real-time communication convergence. IOTEX's blockchain infrastructure, known for its robustness in IoT applications, could provide Dtelegram with enhanced capabilities, particularly in securing and scaling IoT-related communications, thus broadening the network's application spectrum \cite{Cai2020}.
+Exploring further horizons, dTelecom is considering integration with Peaq, a move that could pioneer new frontiers in the convergence of IoT and real-time communication. Peaq's blockchain infrastructure, known for its robustness in IoT applications, could provide dTelecom with enhanced capabilities, particularly in securing and scaling IoT-related communications, thus broadening the network's application spectrum \cite{Cai2020}.
 
-\paragraph{SDK/API Layer} Dtelegram provides a comprehensive SDK and API layer, designed to facilitate the seamless integration and development of real-time communication functionalities within various applications. This layer abstracts the underlying decentralized infrastructure, offering developers a robust, intuitive, and flexible toolkit to embed audio/video communication features into their applications, akin to conventional RTC SDKs but with the added benefits of decentralization (Möller, 2017).
+\paragraph{SDK/API Layer} dTelecom provides a complete SDK and API layer, designed to facilitate the seamless integration and development of real-time communication functions within various applications. This layer abstracts the underlying decentralized infrastructure, offering developers a robust, intuitive, and flexible toolkit to embed audio/video communication features into their applications, similar to conventional RTC SDKs, but with the added benefits of decentralization.
 
-Dtelegram's decision to build upon LiveKit's open-source platform for real-time audio and video is strategic, leveraging LiveKit's robust features while extending them into a decentralized architecture. This integration underscores Dtelegram's commitment to providing high-quality, reliable RTC services enriched with the benefits of decentralization, such as improved privacy, reduced reliance on central points of control, and enhanced user autonomy.
+dTelecom's decision to build upon LiveKit's open-source platform for real-time audio and video is strategic, leveraging LiveKit's robust features while extending them into a decentralized architecture. This integration underscores dTelecom's commitment to providing high-quality, reliable RTC services enriched with the benefits of decentralization, such as improved privacy, reduced reliance on central points of control, and enhanced user autonomy.
+
+\pagebreak
 
 \section{Product Offering}
 
-Dtelegram introduces a suite of products designed to revolutionize real-time communication by harnessing the power of decentralization. Our offerings cater to a broad spectrum of industries, providing them with the tools to integrate cutting-edge communication solutions while ensuring unparalleled data privacy and cost efficiency.
+dTelecom introduces a suite of products designed to revolutionize real-time communication by harnessing the power of decentralization. Our offerings cater to a broad spectrum of industries, providing them with the tools to integrate cutting-edge communication solutions while ensuring unparalleled data privacy and cost efficiency.
 
 \subsection{Comprehensive SDK and API Suite}
 
-Our core product offering is the Dtelegram SDK/API suite, an advanced toolkit that enables developers to seamlessly integrate or build audio and video communication functionalities into their applications. This suite is designed with flexibility in mind, allowing for easy adaptation to various programming environments and platforms. By using Dtelegram's SDK/API, developers can leverage the decentralized nature of the infrastructure to enhance application performance, scalability, and user experience.
+Our core product offering is the dTelecom SDK/API suite, an advanced toolkit that enables developers to seamlessly integrate or build audio and video communication functionalities into their applications. This suite is designed with flexibility in mind, allowing for easy adaptation to various programming environments and platforms. By using dTelecom's SDK/API, developers can leverage the decentralized nature of the infrastructure to enhance application performance, scalability, and user experience.
 
-\paragraph{Data Privacy Advantage} In an era where data privacy is paramount, Dtelegram offers a compelling value proposition. Our decentralized model inherently protects user data, distributing communication loads across a network of nodes without centralized data storage points. This architecture not only mitigates the risks of data breaches but also aligns with growing regulatory and consumer demands for privacy-respecting services. Developers and organizations choosing Dtelegram can assure their users that their communication data is handled with the utmost integrity and security.
+\paragraph{Data Privacy Advantage} In an era where data privacy is paramount, dTelecom offers a compelling value proposition. Our decentralized model inherently protects user data, distributing communication loads across a network of nodes without centralized data storage points. This architecture not only mitigates the risks of data breaches but also aligns with growing regulatory and consumer demands for privacy-respecting services. Developers and organizations choosing dTelecom can assure their users that their communication data is handled with the utmost integrity and security.
 
-\paragraph{Cost Efficiency} Dtelegram's decentralized infrastructure significantly reduces the operational and infrastructure costs associated with real-time communication services. Traditional centralized models incur substantial expenses in server maintenance, data transmission, and scalability solutions. Dtelegram alleviates these costs by distributing the operational load across a decentralized network, where node operators share the responsibilities and rewards. This model offers a cost-effective solution for businesses, especially startups and SMEs, enabling them to access high-quality communication services without the hefty price tag.
+\paragraph{Cost Efficiency} dTelecom's decentralized infrastructure significantly reduces the operational and infrastructure costs associated with real-time communication services. Traditional centralized models incur substantial expenses in server maintenance, data transmission, and scalability solutions. dTelecom alleviates these costs by distributing the operational load across a decentralized network, where node operators share the responsibilities and rewards. This model offers a cost-effective solution for businesses, especially startups and SMEs, enabling them to access high-quality communication services without the hefty price tag.
 
-\begin{table}[h!]
+
+
+\subsection{Node Operator Program}
+
+An integral part of our product ecosystem is the Node Operator Program. This initiative allows individuals and organizations to become node operators within the dTelecom network, contributing to the infrastructure while earning rewards for their participation. This program not only decentralizes the network's operation but also democratizes the economic benefits, distributing them among a broader set of stakeholders.
+
+Beyond the SDK/API, dTelecom provides a Decentralized Infrastructure as a Service (D-IaaS) for real-time communication. This service allows businesses and developers to tap into a global network of communication nodes, ensuring low latency and high reliability without the need for substantial capital investment in infrastructure. Clients can customize their service usage based on their specific needs, scaling up or down with ease, and only paying for the resources they use.
+
+\subsection{Future Product Expansions}
+
+Looking ahead, dTelecom plans to expand its product offerings to include specialized solutions for industries with unique communication needs, such as healthcare, education, and entertainment. By continuously evolving our product suite, we aim to stay at the forefront of decentralized communication technology, providing innovative solutions that address the challenges and opportunities of a rapidly changing digital landscape.
+
+Our product offering is designed to set a new standard in real-time communication, focusing on data privacy, cost efficiency, and innovative technology. Our SDK/API suite, combined with the decentralized infrastructure and node operator program, provides a comprehensive and compelling value proposition for businesses and developers looking to harness the next generation of communication technology.
+
+
+\begin{table}
 \centering
 \begin{tabular}{|p{3.5cm}|p{10.5cm}|}
 \hline
 \textbf{Benefits} & \textbf{Details} \\
 \hline
-Initial Investment & Node operators need to stake DTEL worth approximately \$10,000 to start a node. This initial investment serves as a commitment to the network's health and security. \\
+Initial Investment & Node operators need to stake \$DTEL worth approximately \$10,000 to start a node. This initial investment serves as a commitment to the network's health and security. \\
 \hline
-Revenue Generation & Node operators earn money by providing network services. The revenue is derived from the payment clients make to use the network, which is then used to buy DTEL and distributed among the nodes. \\
+Revenue Generation & Node operators earn money by providing network services. The revenue is derived from the payment clients make to use the network, which is then used to buy \$DTEL and distributed among the nodes. \\
 \hline
-Payment Discount & Operators can benefit from using DTEL for various network services at a discount, reducing operational costs if they choose to utilize services within the Dtelegram ecosystem. \\
+Payment Discount & Operators can benefit from using \$DTEL for various network services at a discount, reducing operational costs if they choose to utilize services within the dTelecom ecosystem. \\
 \hline
-Market Position Comparison & Dtelegram aims to provide competitive or superior rewards to its node operators. \\
+Market Position Comparison & dTelecom aims to provide competitive or superior rewards to its node operators. \\
 \hline
-Token Value Potential & With Dtelegram's token economics, there is potential for token value appreciation, especially given market dynamics observed with similar tokens like LPT from Livepeer. An example provided indicates a potential valuation increase if Dtelegram achieves comparable network engagement and value. \\
+Token Value Potential & With dTelecom's token economics, there is potential for token value appreciation, especially given market dynamics observed with similar tokens like \$LPT from Livepeer. An example provided indicates a potential valuation increase if dTelecom achieves comparable network engagement and value. \\
 \hline
-Fixed Token Supply and Burning & The fixed supply of DTEL tokens, coupled with a burning mechanism, can lead to an appreciation in token value over time, benefiting node operators holding or earning DTEL. \\
+Fixed Token Supply and Burning & The fixed supply of \$DTEL tokens, coupled with a burning mechanism, can lead to an appreciation in token value over time, benefiting node operators holding or earning \$DTEL. \\
 \hline
-Geographical Strategy for Nodes & Node operators are incentivized to set up nodes in regions with high demand, ensuring optimal earnings and network performance. Dtelegram's strategy includes geographical considerations to enhance service efficiency and operator rewards. \\
+Geographical Strategy for Nodes & Node operators are incentivized to set up nodes in regions with high demand, ensuring optimal earnings and network performance. dTelecom's strategy includes geographical considerations to enhance service efficiency and operator rewards. \\
 \hline
 Capacity and Performance Checks & Operators benefit from a network design that regularly checks server capacity and performance, ensuring fair compensation for node contributions and maintaining network quality. Nodes failing to meet standards can be identified and rectified, protecting operators' investments and revenue. \\
 \hline
@@ -175,47 +204,39 @@ Risk Mitigation & The required stake and geographical distribution of nodes miti
 \end{table}
 
 
-\subsection{Node Operator Program}
 
-An integral part of our product ecosystem is the Node Operator Program. This initiative allows individuals and organizations to become node operators within the Dtelegram network, contributing to the infrastructure while earning rewards for their participation. This program not only decentralizes the network's operation but also democratizes the economic benefits, distributing them among a broader set of stakeholders.
 
-Beyond the SDK/API, Dtelegram provides a Decentralized Infrastructure as a Service (D-IaaS) for real-time communication. This service allows businesses and developers to tap into a global network of communication nodes, ensuring low latency and high reliability without the need for substantial capital investment in infrastructure. Clients can customize their service usage based on their specific needs, scaling up or down with ease, and only paying for the resources they use.
-
-\subsection{Future Product Expansions}
-
-Looking ahead, Dtelegram plans to expand its product offerings to include specialized solutions for industries with unique communication needs, such as healthcare, education, and entertainment. By continuously evolving our product suite, we aim to stay at the forefront of decentralized communication technology, providing innovative solutions that address the challenges and opportunities of a rapidly changing digital landscape.
-
-Our product offering is designed to set a new standard in real-time communication, focusing on data privacy, cost efficiency, and innovative technology. Our SDK/API suite, combined with the decentralized infrastructure and node operator program, provides a comprehensive and compelling value proposition for businesses and developers looking to harness the next generation of communication technology.
+\pagebreak
 
 \section{Tokenomics and Network Participation}
 
-Dtelegram's tokenomics model is meticulously crafted to underpin the network's decentralized infrastructure, encouraging active participation and ensuring the network's long-term viability and growth. The DTEL token serves as the lifeblood of the Dtelegram ecosystem, facilitating transactions, incentivizing node operators, and enabling a range of governance and utility functions within the network.
+dTelecom's tokenomics model is meticulously crafted to underpin the network's decentralized infrastructure, encouraging active participation and ensuring the network's long-term viability and growth. The \$DTEL token serves as the lifeblood of the dTelecom ecosystem, facilitating transactions, incentivizing node operators, and enabling a range of governance and utility functions within the network.
 
-Dtelegram's tokenomics and network participation model are designed to foster a robust, decentralized, and engaged community, driving the network's growth and success. By aligning the interests of token holders, node operators, and users, Dtelegram creates a sustainable economic foundation that underpins its innovative decentralized communication platform.
+dTelecom's tokenomics and network participation model are designed to foster a robust, decentralized, and engaged community, driving the network's growth and success. By aligning the interests of token holders, node operators, and users, dTelecom creates a sustainable economic foundation that underpins its innovative decentralized communication platform.
 
 
 \subsection{Token Utility and Distribution}
-\begin{figure}
+\begin{figure}[h] 
     \centering
     \includegraphics[width=1\linewidth]{dtelegram-02.png}
     \caption{Token Utility}
     \label{fig:enter-label}
 \end{figure}
 
-The DTEL token is designed with multiple utilities in mind, each aimed at enhancing the network's functionality and incentivizing participation:
+The \$DTEL token is designed with multiple utilities in mind, each aimed at enhancing the network's functionality and incentivizing participation:
 
 \begin{itemize}
-    \item Node Operation and Staking: To operate a node within the Dtelegram network, participants are required to stake DTEL tokens. This mechanism ensures that node operators have a vested interest in the network's integrity and performance. Staking also serves as a security measure, deterring malicious behavior by imposing potential staking penalties for any actions that compromise the network.
-    \item Transaction Fees: DTEL tokens are used to pay for various services within the Dtelegram ecosystem, including transaction fees for utilizing the network's communication services. These fees are designed to be competitive while ensuring the network's sustainability.
-    \item Governance: DTEL token holders have governance rights, allowing them to vote on key decisions affecting the network's future, such as protocol upgrades, treasury management, and other crucial aspects of the Dtelegram ecosystem.
-    \item Rewards and Incentives: Node operators and participants contributing to the network receive rewards in DTEL tokens, aligning their interests with the network's success and fostering a community of engaged stakeholders.
+    \item Node Operation and Staking: To operate a node within the dTelecom network, participants are required to stake \$DTEL tokens. This mechanism ensures that node operators have a vested interest in the network's integrity and performance. Staking also serves as a security measure, deterring malicious behavior by imposing potential staking penalties for any actions that compromise the network.
+    \item Transaction Fees: \$DTEL tokens are used to pay for various services within the dTelecom ecosystem, including transaction fees for utilizing the network's communication services. These fees are designed to be competitive while ensuring the network's sustainability.
+    \item Governance: \$DTEL token holders have governance rights, allowing them to vote on key decisions affecting the network's future, such as protocol upgrades, treasury management, and other crucial aspects of the dTelecom ecosystem.
+    \item Rewards and Incentives: Node operators and participants contributing to the network receive rewards in \$DTEL tokens, aligning their interests with the network's success and fostering a community of engaged stakeholders.
 \end{itemize}
 
-The initial distribution of DTEL tokens is strategically designed to support the network's growth and stability:
+The initial distribution of \$DTEL tokens is strategically designed to support the network's growth and stability:
 \begin{itemize}
     \item Network Incentives: A significant portion of the total token supply is allocated to incentivize network participation, including rewards for node operators and early adopters.
-    \item Development Fund: Tokens are reserved for ongoing development, ensuring that the Dtelegram team can continue to innovate and enhance the platform.
-    \item Community and Ecosystem: A dedicated allocation for community initiatives, partnerships, and ecosystem development helps foster a vibrant and supportive Dtelegram community.
+    \item Development Fund: Tokens are reserved for ongoing development, ensuring that the dTelecom team can continue to innovate and enhance the platform.
+    \item Community and Ecosystem: A dedicated allocation for community initiatives, partnerships, and ecosystem development helps foster a vibrant and supportive dTelecom community.
     \item Private and Public Sales: Portions of the token supply are distributed through private and public sales, providing initial funding for the network's development and allowing a broad base of investors to participate in the project.
 \end{itemize}
 
@@ -228,30 +249,33 @@ The initial distribution of DTEL tokens is strategically designed to support the
     \label{fig:enter-label}
 \end{figure}
 
-Node operators play a critical role in the Dtelegram network, maintaining the infrastructure required for decentralized communication. The economics of node operation are designed to be attractive and sustainable, offering operators a compelling return on their investment and effort:
+Node operators play a critical role in the dTelecom network, maintaining the infrastructure required for decentralized communication. The economics of node operation are designed to be attractive and sustainable, offering operators a compelling return on their investment and effort:
 
 \begin{itemize}
-    \item Staking Rewards: Node operators receive staking rewards in DTEL tokens, compensating them for locking up their tokens and supporting the network.
+    \item Staking Rewards: Node operators receive staking rewards in \$DTEL tokens, compensating them for locking up their tokens and supporting the network.
     \item Transaction Fee Shares: Operators earn a share of the transaction fees generated by the traffic they facilitate, creating a direct link between an operator's contribution to the network and their rewards.
-    \item Penalty Mechanisms: To discourage dishonest or suboptimal performance \ref{fig:quality-basedl} \ref{fig:system-breach}, node operators face penalties for actions that negatively impact the network. These penalties involve a loss of a portion of their staked DTEL tokens, incentivizing operators to maintain high standards of operation.
+    \item Penalty Mechanisms: To discourage dishonest or suboptimal performance \ref{fig:quality-basedl} \ref{fig:system-breach}, node operators face penalties for actions that negatively impact the network. These penalties involve a loss of a portion of their staked \$DTEL tokens, incentivizing operators to maintain high standards of operation.
 
 \end{itemize}
 
 \subsection{Economic Stability and Growth Mechanisms}
 
-Dtelegram implements several mechanisms to ensure the economic stability and growth of the network:
+dTelecom implements several mechanisms to ensure the economic stability and growth of the network:
 
 \begin{itemize}
-    \item Token Burn: A portion of the transaction fees collected by the network is burned, introducing a deflationary pressure on the DTEL token supply and potentially increasing the token's value over time.
+    \item Token Burn: A portion of the transaction fees collected by the network is burned, introducing a deflationary pressure on the \$DTEL token supply and potentially increasing the token's value over time.
     \item Dynamic Staking Requirements: The network adjusts staking requirements based on various factors, including the total number of nodes and network needs, ensuring that the barriers to entry for new node operators are balanced with the network's growth and security requirements.
     \item Treasury and Reserve: A portion of the tokens is held in a treasury and reserve, managed by the community through governance votes. This reserve can be utilized to stabilize the token economy, fund strategic initiatives, and support the network during economic downturns.
 \end{itemize}
 
+\pagebreak
+
+
 \section{Financial Overview}
 
-The financial landscape of Dtelegram is meticulously designed to ensure the project's sustainability, growth, and value generation for its stakeholders. This section delves into the key financial aspects of Dtelegram, including funding rounds, token generation events (TGE), and the strategic allocation of funds to fuel the network's development and expansion.
+The financial landscape of dTelecom is meticulously designed to ensure the project's sustainability, growth, and value generation for its stakeholders. This section delves into the key financial aspects of dTelecom, including funding rounds, token generation events (TGE), and the strategic allocation of funds to fuel the network's development and expansion.
 
-The financial overview of Dtelegram outlines a strategic approach to funding, expenditure, and long-term sustainability. By aligning its financial strategy with the project's core objectives and market opportunities, Dtelegram aims to establish a strong economic foundation that supports its mission to revolutionize decentralized real-time communication.
+The financial overview of dTelecom outlines a strategic approach to funding, expenditure, and long-term sustainability. By aligning its financial strategy with the project's core objectives and market opportunities, dTelecom aims to establish a strong economic foundation that supports its mission to revolutionize decentralized real-time communication.
 
 \begin{table}[h!]
 \centering
@@ -259,122 +283,130 @@ The financial overview of Dtelegram outlines a strategic approach to funding, ex
 \hline
 \textbf{Aspect} & \textbf{Detail} & \textbf{Comments} \\
 \hline
-Revenue Potential & \$15,400 from 10 clients (2000 participants) monthly & High revenue potential from a growing user base. \\
+Revenue Potential & \$1540 from 1 client monthly  & High revenue potential from a growing user base. \\
 \hline
-Hosting and Operational Costs & Maximum of \$11,120 monthly for hosting; aligns 20\% for operating expenses and maintenance & Efficient cost management ensuring higher profit margins. \\
+Hosting and Operational Costs & Maximum of \$556 monthly for hosting; aligns 20\% for operating expenses and maintenance & Efficient cost management ensuring higher profit margins. \\
 \hline
-Competitive Pricing & \$6.95 minimum price after adding 25\% on top of cost & Attractive pricing strategy can lead to market penetration and user base expansion. \\
+Competitive Pricing & The subscription model with bandwidth provides unlimited minutes and data, allowing customers to save up to 95\%. & Attractive pricing strategy can lead to market penetration and user base expansion. \\
 \hline
-Token Economics & 75\% revenue distributed among server owners; 5\% for token burn; 20\% for operations & Token value is supported by practical utility and scarcity, enhancing investment attractiveness. \\
+Token Economics & 75\% revenue distributed among node owners; 5\% for token burn; 20\% for operations & Token value is supported by practical utility and scarcity, enhancing investment attractiveness. \\
 \hline
-Market Positioning & Cost-effective and scalable compared to competitors like Twilio and LiveKit & Potential to capture significant market share, driving revenue and token value. \\
+Market Positioning & Cost-effective and scalable compared to competitors like Agora and LiveKit & Potential to capture significant market share, driving revenue and token value. \\
 \hline
 Long-Term Growth & Infrastructure allows for scalability, targeting a large number of simultaneous participants & Long-term user and revenue growth potential, contributing to a robust investment case. \\
 \hline
 \end{tabular}
-\caption{Implications of Dtelegram's economic model}
+\caption{Implications of dTelecom's economic model}
 \label{tab:investor_implications}
 \end{table}
 
 
 \subsection{Funding Rounds}
 
-Dtelegram has structured its funding through strategic rounds, ensuring that the project has a steady influx of capital to support its development milestones, infrastructure expansion, and market penetration efforts.
+dTelecom has structured its funding through strategic rounds, ensuring that the project has a steady influx of capital to support its development milestones, infrastructure expansion, and market penetration efforts.
 
 \begin{itemize}
-    \item Pre-Seed Round: Dtelegram has successfully wrapped up its pre-seed funding round, securing \$400,000. This initial capital infusion is earmarked for critical early-stage activities, including product development, initial network setup, and key hires.
-    \item Private Round: Following the pre-seed, Dtelegram plans to launch a private funding round aiming to raise \$800,000. This round will target strategic investors who can bring not just capital but also industry expertise and partnerships to the table. The funds will be directed towards further product refinement, expansion of the node network, and initial marketing efforts.
+    \item Pre-Seed Round: dTelecom has successfully wrapped up its pre-seed funding round, securing \$400,000. This initial capital infusion is earmarked for critical early-stage activities, including product development, initial network setup, and key hires.
+    \item Private Round: Following the pre-seed, dTelecom plans to launch a private funding round aiming to raise \$800,000. This round will target strategic investors who can bring not just capital but also industry expertise and partnerships to the table. The funds will be directed towards further product refinement, expansion of the node network, and initial marketing efforts.
 \end{itemize}
 
 \subsection{Token Generation Event (TGE)}
 
-Planned for Q2 2024, the TGE represents a pivotal moment for Dtelegram, transitioning from a funding-focused phase towards operational and market expansion. The TGE will not only provide additional capital but also distribute DTEL tokens to a broader audience, enhancing network participation and token liquidity.
+Planned for Q3 2024, the TGE represents a pivotal moment for dTelecom, transitioning from a funding-focused phase towards operational and market expansion. The TGE will not only provide additional capital but also distribute \$DTEL tokens to a broader audience, enhancing network participation and token liquidity.
 
 \textbf{Token Distribution}: Details regarding the percentage of tokens to be sold, reserved for the team, or allocated for community incentives will be clearly outlined, ensuring transparency and aligning with best practices in tokenomics.vFunds raised during the TGE will be allocated across several key areas:
 
 \begin{itemize}
     \item Network Development: Significant investment in technology development to enhance the network's capabilities, scalability, and security.
     \item Infrastructure Expansion: Financing the expansion of the decentralized node network to improve coverage, reduce latency, and increase resilience.
-    \item Marketing and Community Building: Allocating resources to build brand awareness, drive adoption, and foster a vibrant community around Dtelegram.
-    \item Operations and Reserves: Ensuring that Dtelegram has the operational funding to maintain and grow its ecosystem, alongside setting aside reserves to safeguard against unforeseen challenges.
+    \item Marketing and Community Building: Allocating resources to build brand awareness, drive adoption, and foster a vibrant community around dTelecom.
+    \item Operations and Reserves: Ensuring that dTelecom has the operational funding to maintain and grow its ecosystem, alongside setting aside reserves to safeguard against unforeseen challenges.
 
 \end{itemize}
 
 \subsection{Financial Projections and Sustainability}
 
-\begin{figure}
+\begin{figure}%
     \centering
-    \includegraphics[width=1\linewidth]{dtelegram-06.png}
+    \subfloat{{\includegraphics[width=7cm]{dtelecom-07.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width=7cm]{dtelecom-09.png} }}%
     \caption{Conservative Financial Projections}
-    \label{fig:conservative-financel}
+    \label{fig:conservative-financel}%
 \end{figure}
 
-While specific financial projections are contingent on market dynamics and adoption rates, Dtelegram is committed to creating a sustainable economic model.
+While specific financial projections are contingent on market dynamics and adoption rates, dTelecom is committed to creating a sustainable economic model.
 
 \begin{itemize}
-    \item Revenue Streams: Primarily, revenue will be generated from transaction fees within the network and services provided via the Dtelegram API/SDK. As adoption grows, these revenue streams are expected to provide the financial backbone for the network's self-sustainability.
-    \item Cost Management: Dtelegram places a strong emphasis on efficient capital allocation and cost management, ensuring that the funds raised are utilized judiciously to achieve maximum impact and drive towards network sustainability.
-    \item Long-Term Financial Planning: Dtelegram's financial strategy includes long-term planning, focusing on scaling the network, diversifying revenue streams, and building a robust financial reserve to weather market fluctuations and invest in future growth opportunities.
+    \item Revenue Streams: Primarily, revenue will be generated from transaction fees within the network and services provided via the dTelecom API/SDK. As adoption grows, these revenue streams are expected to provide the financial backbone for the network's self-sustainability.
+    \item Cost Management: dTelecom places a strong emphasis on efficient capital allocation and cost management, ensuring that the funds raised are utilized judiciously to achieve maximum impact and drive towards network sustainability.
+    \item Long-Term Financial Planning: dTelecom's financial strategy includes long-term planning, focusing on scaling the network, diversifying revenue streams, and building a robust financial reserve to weather market fluctuations and invest in future growth opportunities.
 \end{itemize}
+
+\pagebreak
 
 \section{Legal and Compliance}
 
-In the rapidly evolving landscape of digital communication technologies, legal and compliance issues present significant challenges, particularly for centralized entities that often grapple with diverse regulatory frameworks across jurisdictions. Dtelegram, with its decentralized approach, aims to navigate these complexities by adhering to a robust legal and compliance strategy that addresses the unique challenges of decentralized networks while aligning with global standards.
+In the rapidly evolving landscape of digital communication technologies, legal and compliance issues present significant challenges, particularly for centralized entities that often grapple with diverse regulatory frameworks across jurisdictions. dTelecom, with its decentralized approach, aims to navigate these complexities by adhering to a robust legal and compliance strategy that addresses the unique challenges of decentralized networks while aligning with global standards.
 
-Dtelegram's legal and compliance strategy is designed to address the multifaceted challenges faced by decentralized networks, ensuring adherence to global standards while promoting a secure, transparent, and legally compliant environment for all network participants. Through proactive legal engagement and adaptive compliance practices, Dtelegram aims to set a benchmark for legal and regulatory adherence in the decentralized communication space.
+dTelecom's legal and compliance strategy is designed to address the multifaceted challenges faced by decentralized networks, ensuring adherence to global standards while promoting a secure, transparent, and legally compliant environment for all network participants. Through proactive legal engagement and adaptive compliance practices, dTelecom aims to set a benchmark for legal and regulatory adherence in the decentralized communication space.
 
 \subsection{Adherence to Global Regulatory Standards}
 
-Dtelegram operates in a realm where regulatory scrutiny is intensifying, particularly around data privacy, cybersecurity, and cross-border data flows. Given the decentralized nature of Dtelegram's infrastructure, it is imperative to design compliance mechanisms that are inherently flexible and adaptive to various jurisdictions.
+dTelecom operates in a realm where regulatory scrutiny is intensifying, particularly around data privacy, cybersecurity, and cross-border data flows. Given the decentralized nature of dTelecom's infrastructure, it is imperative to design compliance mechanisms that are inherently flexible and adaptive to various jurisdictions.
 
-\paragraph{Data Privacy and Protection} Dtelegram is committed to upholding the highest standards of data privacy and protection, aligning with global regulations such as the General Data Protection Regulation (GDPR) in Europe and similar frameworks worldwide. The decentralized nature of the network inherently supports data sovereignty, allowing users to retain control over their data.
+\paragraph{Data Privacy and Protection} dTelecom is committed to upholding the highest standards of data privacy and protection, aligning with global regulations such as the General Data Protection Regulation (GDPR) in Europe and similar frameworks worldwide. The decentralized nature of the network inherently supports data sovereignty, allowing users to retain control over their data.
 
-\paragraph{Anti-Money Laundering (AML) and Counter Financing of Terrorism (CFT)} Even though Dtelegram's core operation is not financial in nature, its tokenomics involves the transfer of value. Hence, Dtelegram will implement AML and CFT policies in line with global standards, ensuring that its financial transactions remain transparent and legal.
+\paragraph{Anti-Money Laundering (AML) and Counter Financing of Terrorism (CFT)} Even though dTelecom's core operation is not financial in nature, its tokenomics involves the transfer of value. Hence, dTelecom will implement AML and CFT policies in line with global standards, ensuring that its financial transactions remain transparent and legal.
 
 \subsection{Intellectual Property Rights}
 
-In the technology domain, protecting intellectual property (IP) while fostering innovation is crucial. Dtelegram respects the IP rights of others and ensures that its own technological advancements are protected where necessary. At the same time, Dtelegram is committed to open innovation, contributing to the open-source community while ensuring that such contributions do not infringe on the IP rights of third parties.
+In the technology domain, protecting intellectual property (IP) while fostering innovation is crucial. dTelecom respects the IP rights of others and ensures that its own technological advancements are protected where necessary. At the same time, dTelecom is committed to open innovation, contributing to the open-source community while ensuring that such contributions do not infringe on the IP rights of third parties.
 
 \subsection{Compliance with Telecommunication Regulations}
 
-As Dtelegram provides tools for real-time communication, it intersects with telecommunication regulatory frameworks that vary across jurisdictions. Dtelegram will monitor and comply with telecommunication regulations in jurisdictions where it operates, adapting its operations as necessary to ensure compliance. Engage with regulatory bodies to advocate for fair and forward-looking regulations that support innovation in decentralized communication technologies.
+As dTelecom provides tools for real-time communication, it intersects with telecommunication regulatory frameworks that vary across jurisdictions. dTelecom will monitor and comply with telecommunication regulations in jurisdictions where it operates, adapting its operations as necessary to ensure compliance. Engage with regulatory bodies to advocate for fair and forward-looking regulations that support innovation in decentralized communication technologies.
 
 \subsection{Legal Challenges for Decentralized Networks}
 
-Decentralized networks face unique legal challenges, particularly around jurisdictional questions and the application of law in a distributed architecture. Dtelegram is proactive in addressing these challenges
+Decentralized networks face unique legal challenges, particularly around jurisdictional questions and the application of law in a distributed architecture. dTelecom is proactive in addressing these challenges
 
-\paragraph{Jurisdictional Analysis} Given the global nature of the Dtelegram network, understanding and navigating the legal frameworks of multiple jurisdictions is essential. Dtelegram conducts thorough jurisdictional analyses to ensure compliance across different regions.
+\paragraph{Jurisdictional Analysis} Given the global nature of the dTelecom network, understanding and navigating the legal frameworks of multiple jurisdictions is essential. dTelecom conducts thorough jurisdictional analyses to ensure compliance across different regions.
 
-\paragraph{Dispute Resolution} Dtelegram establishes clear mechanisms for dispute resolution, ensuring that users and participants have recourse in the event of conflicts or issues, despite the decentralized nature of the network.
+\paragraph{Dispute Resolution} dTelecom establishes clear mechanisms for dispute resolution, ensuring that users and participants have recourse in the event of conflicts or issues, despite the decentralized nature of the network.
 
 \subsection{Continuous Legal Monitoring and Adaptation}
 
-Recognizing that legal frameworks around digital communication and blockchain technologies are evolving, Dtelegram commits to continuous monitoring of legal developments in key jurisdictions, ensuring that the network remains compliant with new laws and regulations. Engaging legal experts and advisors to navigate complex legal landscapes, ensuring that Dtelegram's operations are sustainable and legally sound.
+Recognizing that legal frameworks around digital communication and blockchain technologies are evolving, dTelecom commits to continuous monitoring of legal developments in key jurisdictions, ensuring that the network remains compliant with new laws and regulations. Engaging legal experts and advisors to navigate complex legal landscapes, ensuring that dTelecom's operations are sustainable and legally sound.
+\pagebreak
+
 
 \section{Summary}
 
-As we stand at the cusp of a new era in digital communication, Dtelegram emerges as a pioneering force, redefining the landscape through its decentralized real-time communication platform. Our comprehensive approach, blending innovative technology with robust business and investment strategies, positions Dtelegram as a leader in this transformative journey. This conclusion aims to synthesize the key aspects of Dtelegram for our business customers and investors, underscoring the value and opportunities inherent in our network.
+As we stand at the cusp of a new era in digital communication, dTelecom emerges as a pioneering force, redefining the landscape through its decentralized real-time communication platform. Our comprehensive approach, blending innovative technology with robust business and investment strategies, positions dTelecom as a leader in this transformative journey. This conclusion aims to synthesize the key aspects of dTelecom for our business customers and investors, underscoring the value and opportunities inherent in our network.
 
-\paragraph{For Business Customers} Dtelegram offers an unparalleled opportunity for businesses to leverage a cutting-edge communication platform that prioritizes security, data privacy, and cost-effectiveness. By integrating Dtelegram's SDK/API into your services, your business gains access to a decentralized network that ensures superior quality, reduced latency, and enhanced data sovereignty compared to traditional centralized solutions. The flexibility and scalability provided by Dtelegram mean that businesses of all sizes can adapt and grow without being hampered by infrastructural limitations or exorbitant costs.
-
-\begin{itemize}
-    \item Data Privacy and Security: In an environment where data breaches and privacy concerns are escalating, Dtelegram stands out by offering a secure communication channel, ensuring that your business data remains confidential and protected.
-    \item Cost Efficiency: By decentralizing infrastructure, Dtelegram significantly reduces operational costs associated with real-time communication, allowing businesses to allocate resources more effectively and improve their bottom line.
-    \item Innovation and Flexibility: Dtelegram's platform encourages innovation, offering businesses the tools to create bespoke communication solutions that cater to their unique needs, fostering better engagement with customers and within teams.
-\end{itemize}
-
-\paragraph{For Investors} Investing in Dtelegram means becoming part of a venture that is poised at the forefront of the next wave of internet infrastructure. With a solid foundation in blockchain technology and a clear vision for the future of decentralized communication, Dtelegram presents a compelling case for investment.
+\paragraph{For Business Customers} dTelecom offers an unparalleled opportunity for businesses to leverage a cutting-edge communication platform that prioritizes security, data privacy, and cost-effectiveness. By integrating dTelecom's SDK/API into your services, your business gains access to a decentralized network that ensures superior quality, reduced latency, and enhanced data sovereignty compared to traditional centralized solutions. The flexibility and scalability provided by dTelecom mean that businesses of all sizes can adapt and grow without being hampered by infrastructural limitations or exorbitant costs.
 
 \begin{itemize}
-    \item Growth Potential: The demand for real-time communication solutions is growing exponentially. Dtelegram, with its decentralized model, is well positioned to capture a significant share of this expanding market, offering substantial growth potential for investors.
-    \item Innovative Business Model: Dtelegram's tokenomics and network participation incentives create a vibrant ecosystem that fosters growth and stability, enhancing the intrinsic value of the DTEL token and providing attractive returns on investment.
-    \item  Commitment to Excellence: Our dedicated team, with its deep expertise in blockchain, communication technologies, and business development, is committed to ensuring Dtelegram's success, aligning with investors' interests for long-term value creation.
+    \item Data Privacy and Security: In an environment where data breaches and privacy concerns are escalating, dTelecom stands out by offering a secure communication channel, ensuring that your business data remains confidential and protected.
+    \item Cost Efficiency: By decentralizing infrastructure, dTelecom significantly reduces operational costs associated with real-time communication, allowing businesses to allocate resources more effectively and improve their bottom line.
+    \item Innovation and Flexibility: dTelecom's platform encourages innovation, offering businesses the tools to create bespoke communication solutions that cater to their unique needs, fostering better engagement with customers and within teams.
+\end{itemize}
+
+\paragraph{For Investors} Investing in dTelecom means becoming part of a venture that is poised at the forefront of the next wave of internet infrastructure. With a solid foundation in blockchain technology and a clear vision for the future of decentralized communication, dTelecom presents a compelling case for investment.
+
+\begin{itemize}
+    \item Growth Potential: The demand for real-time communication solutions is growing exponentially. dTelecom, with its decentralized model, is well positioned to capture a significant share of this expanding market, offering substantial growth potential for investors.
+    \item Innovative Business Model: dTelecom's tokenomics and network participation incentives create a vibrant ecosystem that fosters growth and stability, enhancing the intrinsic value of the \$DTEL token and providing attractive returns on investment.
+    \item  Commitment to Excellence: Our dedicated team, with its deep expertise in blockchain, communication technologies, and business development, is committed to ensuring dTelecom's success, aligning with investors' interests for long-term value creation.
 
 \end{itemize}
 
-Dtelegram is not just a technological innovation; it is a strategic business solution for companies looking to enhance their communication infrastructure and a lucrative investment opportunity in the burgeoning field of decentralized technologies. By choosing Dtelegram, business customers and investors are aligning with a future where communication is more secure, efficient, and aligned with the demands of the digital age. 
+dTelecom is not just a technological innovation; it is a strategic business solution for companies looking to enhance their communication infrastructure and a lucrative investment opportunity in the burgeoning field of decentralized technologies. By choosing dTelecom, business customers and investors are aligning with a future where communication is more secure, efficient, and aligned with the demands of the digital age. 
 
 We invite you to join us on this exciting journey to shape the future of digital communication together.
+
+\pagebreak
 
 \bibliographystyle{alpha}
 \bibliography{sample}
@@ -383,16 +415,34 @@ We invite you to join us on this exciting journey to shape the future of digital
 
 \section{Appendix}
 
+\subsection{Executive Summary}
+
+In an era where digital communication stands as the cornerstone of global interaction, the dTelecom network introduces a pioneering leap into the future with its decentralized real-time communication infrastructure. Our initiative heralds a transformative approach, redefining the realms of internet-based audio and video communication by deploying a decentralized physical infrastructure that promises enhanced security, reliability, and scalability.
+
+dTelecom offers a robust Software Development Kit (SDK) and Application Programming Interface (API) suite, enabling seamless integration or development of sophisticated communication tools. These offerings empower developers to embed or innovate real-time video/audio communications, such as conferences, live streaming, and audio chats, into existing or new applications. This empowerment is not merely technical but also foundational, as it reimagines the very bedrock on which digital communication infrastructure is built.
+
+Contrasting sharply with centralized counterparts, our decentralized model is not a mere alternative but an advancement. We stand in direct competition with web2 entities like Livekit cloud and carve a distinctive path in the web3 domain, distinctively positioned against entities like huddle01.com. The core philosophy of dTelecom is encapsulated in three key actions: build, own, and earn. Our network is intricately designed to allow clients, especially from burgeoning sectors like GameFi, the metaverse, social apps, and edtech, to not only utilize but also partake in the operational essence of the network.
+
+Transitioning from the Near protocol to the Arbitrum testnet signifies our commitment to cutting-edge technology and operational excellence. Our ongoing dialogues with Peaq and the strategic migration underscore our agile adaptability and forward-thinking ethos. Anchoring our technological framework is our collaboration with LiveKit, upon which we are constructing an even more robust and versatile platform.
+
+Our tokenomics model is designed to incentivize participation and investment in the network. Clients and node operators gain access to the dTelecom ecosystem via our token, which is pivotal for operations within the network. The token serves as a key to entry, a medium of exchange, and a testament to our philosophy of shared ownership and profits.
+
+dTelecom is not just launching a network; it is pioneering a movement towards democratizing digital communication, ensuring that it is more secure, efficient, and equitable. As we invite you to join us on this groundbreaking journey, we stand at the precipice of a new digital communication era, promising unparalleled service quality, operational transparency, and an inclusive model that rewards every stakeholder in the ecosystem.
+
+\pagebreak
+
+\subsection{Penalty workflows}
+
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\linewidth]{dtelegram-04.png}
+    \includegraphics[width=1\linewidth]{dtelecom-041.png}
     \caption{Quality based node penalties}
     \label{fig:quality-basedl}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\linewidth]{dtelegram-05.png}
+    \includegraphics[width=1\linewidth]{dtelecom-051.png}
     \caption{System breach based protection}
     \label{fig:system-breach}
 \end{figure}
