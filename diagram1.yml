@@ -1,6 +1,6 @@
 graph TD
     subgraph dTelecom Network
-    L2[Layer 2 Scaling - Arbitrum]
+    L2[Layer 2 Scaling - Peaq Network]
     Nodes[Decentralized Node Operators]
     SDK[SDK/API for Developers]
     end
