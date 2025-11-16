@@ -1,0 +1,48 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CWE{\etalchar{+}}20}
+
+\bibitem[BMC{\etalchar{+}}15]{Bonneau2015}
+J.~Bonneau, A.~Miller, J.~Clark, A.~Narayanan, J.~A. Kroll, and E.~W. Felten.
+\newblock Sok: Research perspectives and challenges for bitcoin and
+  cryptocurrencies.
+\newblock In {\em 2015 IEEE Symposium on Security and Privacy}, 2015.
+
+\bibitem[Cis21]{Cisco2021}
+Cisco.
+\newblock Cisco annual internet report (2018–2023) white paper, 2021.
+
+\bibitem[CLo]{LiveKit}
+LiveKit CLoud.
+\newblock Livekit - real-time audio and video in your app.
+\newblock Accessed: date.
+
+\bibitem[CWE{\etalchar{+}}20]{Cai2020}
+W.~Cai, Z.~Wang, J.~B. Ernst, Z.~Hong, C.~Feng, and V.~C.~M. Leung.
+\newblock Decentralized applications: The blockchain-empowered software system.
+\newblock {\em IEEE Access}, 2020.
+
+\bibitem[Hud]{Huddle01}
+Huddle01.
+\newblock Huddle01 - decentralized video calls.
+\newblock Accessed: date.
+
+\bibitem[{Mar}21]{MarketResearchFuture2021}
+{Market Research Future}.
+\newblock Real time communication market research report - global forecast till
+  2027, 2021.
+
+\bibitem[Nak08]{Nakamoto2008}
+S.~Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system, 2008.
+
+\bibitem[NC16]{Narayanan2016}
+A.~Narayanan and J.~Clark.
+\newblock Bitcoin's academic pedigree.
+\newblock {\em ACM Queue - Blockchain Technology}, 2016.
+
+\bibitem[pN]{Peaq}
+peaq Network.
+\newblock Blockchain for realworld application.
+\newblock Accessed: date.
+
+\end{thebibliography}
